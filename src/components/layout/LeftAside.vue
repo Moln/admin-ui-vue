@@ -5,7 +5,7 @@
             <ul class="sidebar-menu">
                 <li class="header">MAIN NAVIGATION</li>
                 <li v-for="item in items" :class="['treeview']">
-                    <a href="#">
+                    <a href="#{{item.url || ''}}">
                         <i class="fa fa-{{item.icon||'files-o'}}"></i>
                         <span>{{item.text}}</span>
                         <span class="pull-right-container">

@@ -7,16 +7,17 @@ Vue.use(VueRouter)
 var router = new VueRouter;
 
 router.map({
-    '/login' : {
-        name: 'login',
-        component: require('./components/Login'),
-        auth: true
-    },
     '*': {
         component: {
             template: '<h1>dsfsdfsdf</h1>'
         }
-    }
+    },
+    '/test': {
+        title: 'Test',
+        component: {
+            template: '<h2>sdfsf</h2>'
+        }
+    },
 })
 
 router.beforeEach(function (transition) {
